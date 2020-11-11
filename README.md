@@ -1,20 +1,24 @@
-# Solo React Project
+# Full Join Website
 
-This is the backend for the Solo React project.
+This is a site for Full Join, made with ExpressJS and React :)
 
 ## Getting started
 
 1. Clone this repository
-2. Install dependencies (`npm install`)
+2. Install backend dependencies (`npm install`)
 3. Create a **.env** file based on the example with proper settings for your
    development environment
-4. Setup your PostgreSQL user, password and database and make sure it matches your **.env** file with CREATEDB privileges
+4. Setup your PostgreSQL user and password and make sure it matches your **.env** file with CREATEDB privileges
 
 5. Run
-   * `npm run db:create`
-   * `npm run db:migrate`
-   * `npm run db:seed:all`
+   * `npx dotenv sequelize-cli run db:create`
+   * `npx dotenv sequelize-cli run db:migrate`
+   * `npx dotenv sequelize-cli run db:seed:all`
    * `npm start`
+
+6. cd into client folder and npm install
+7. Run `npm start`
+8. Profit
 
 ## Deploy to Heroku
 
@@ -33,6 +37,4 @@ This is the backend for the Solo React project.
 ```
 (You can interact with your database this way as youd like, but beware that `db:drop` should not be run in the heroku environment)
 
-8. Add a `REACT_APP_BASE_URL` config var.  This should be the full URL of your react app: i.e. "https://solo-react.herokuapp.com"
-
-9. profit
+8. Profit
